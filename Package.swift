@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -15,7 +15,7 @@ let package = Package(
 		),
 	],
 	dependencies: [
-		.package(name: "SwiftkubeModel", url: "https://github.com/swiftkube/model.git", .upToNextMinor(from: "0.5.0")),
+        .package(name: "SwiftkubeModel", url: "https://github.com/octo47/swiftkube-model.git", revision: "c19a8925d4f5bc8e0fa8478d4945e6c6b0bc4895"),
 		.package(name: "async-http-client", url: "https://github.com/swift-server/async-http-client.git", .upToNextMajor(from: "1.2.0")),
 		.package(name: "swift-log", url: "https://github.com/apple/swift-log.git", .upToNextMajor(from: "1.4.0")),
 		.package(name: "swift-metrics", url: "https://github.com/apple/swift-metrics.git", "1.0.0" ..< "3.0.0"),
